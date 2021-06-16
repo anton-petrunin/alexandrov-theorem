@@ -62,7 +62,8 @@ unicode=true %для того, чтобы закладки в pdf-файлах правильно отображались
 %THEOREM
 \newcounter{thm}[section]
 \renewcommand{\thethm}{\thesection.\arabic{thm}}
-\def\claim#1{\par\medskip\noindent\refstepcounter{thm}\hbox{\bf \arabic{section}.\arabic{thm}. #1.}
+\def\claim#1{\par\medskip\noindent\refstepcounter{thm}\hbox{\bf %\arabic{section}.\arabic{thm}. 
+#1.}
 \it\ %\ignorespaces
 }
 \def\endclaim{
