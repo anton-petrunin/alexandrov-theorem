@@ -8,7 +8,7 @@ pdfauthor={Nina Levedeva and Anton Petrunin}
 
 
 \begin{document}
-\pagestyle{empty}\renewcommand\includegraphics[2][{}]{}
+%\pagestyle{empty}\renewcommand\includegraphics[2][{}]{}
 
 \title{Alexandrov embedding theorem}
 \author{Nina Levedeva and Anton Petrunin}
@@ -29,7 +29,7 @@ this statement can be found in a school textbook \cite[§~48]{kiselyov-3D}.
 
 It is easy to see that the surface of a convex polyhedron is homeomorphic to the sphere.
 Therefore the statements above imply that the surface of convex polyhedron equipped with intrinsic metric is an example of \emph{polyhedral metric on the sphere with the sum of angles around each vertex at most $2\cdot\pi$};
-a metric on the sphere is called \emph{polyhedral} if the sphere admits a triangulation such that every triangle is congruent to a plane triangle.
+a metric is called \emph{polyhedral} if the sphere admits a triangulation such that every triangle is congruent to a plane triangle.
 
 The Alexandrov theorem states that converse holds if one includes polyhedrons that degenerate to a plane polygon.
 For such degenerate polyhedrons, its surface is defined as two copies of the polygon glued along their boundary --- one may think that the polygon is made from cardboard and to get from one of its sides to the other one has to pass the perimeter.
@@ -70,7 +70,7 @@ Some of the glued lines appear inside facets of the tetrahedron and some edges (
 
 We will present a sketch of the original proof;
 a complete proof can be found in a beautifully written book by A. D. Alexandrov himself~\cite{alexandrov}.
-Another proof was found by Yu. A. Volkov in his thesis \cite{volkov};
+Another proof was found by Yu.~A.~Volkov in his thesis \cite{volkov};
 it uses a deformation of three-dimensional polyhedral space.
 
 
@@ -171,11 +171,10 @@ We will only show that both spaces $\Phi_n$ and $\Psi_n$ are $(3\cdot n-6)$-dime
 
 Choose a polyhedron $P$ in $\Phi_n$.
 Note that $P$ is uniquely determined by $3\cdot n$ coordinates of its $n$ vertices.
-We can assume that the first vertex is the origin, the second has two vanishing coordinates and the third has one vanishing coordinates; therefore, $3\cdot n-6$ coordinates are sufficient to describe all polyhedra in $\Phi_n$ that lie sufficiently close to $P$.
+We can assume that the first vertex is the origin, the second has two vanishing coordinates and the third has one vanishing coordinates; therefore, all polyhedra in $\Phi_n$ that lie sufficiently close to $P$ can be described by $3\cdot n-6$ parameters.
 If $P$ has no symmetries then this description can be made one-to-one;
 in this case, a neighborhood of $P$ in $\Phi_n$ is a $(3\cdot n-6)$-dimensional manifold.
-If $P$ has a nontrivial symmetry group, say $\Gamma$, then we have to factorize along $\Gamma$;
-since the group is finite, the dimension of the quotient space remains the same.
+If $P$ has a nontrivial symmetry group, then this description is not one-to-one but it has an effect on the dimension of $\Phi_n$.
 
 The case of polyhedral metrics is analogous.
 We need to construct a subdivision of the sphere into plane triangles using only essential vertices.
