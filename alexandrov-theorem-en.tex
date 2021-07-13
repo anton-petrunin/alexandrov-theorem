@@ -2,7 +2,7 @@
 \usepackage{en-note}
 \usepackage{indentfirst}
 \hypersetup{
-pdftitle={Alexandrov embedding theorem},
+pdftitle={Alexandrov's embedding theorem},
 pdfauthor={Nina Lebedeva and Anton Petrunin}
 }
 
@@ -10,36 +10,36 @@ pdfauthor={Nina Lebedeva and Anton Petrunin}
 \begin{document}
 %\pagestyle{empty}\renewcommand\includegraphics[2][{}]{}
 
-\title{Alexandrov embedding theorem}
+\title{Alexandrov's embedding theorem}
 \author{Nina Lebedeva and Anton Petrunin}
 \date{}
 \maketitle
 
 \begin{abstract}
-Alexandrov embedding theorem provides a complete description of the intrinsic geometry of surfaces of convex polyhedra.
+Alexandrov's embedding theorem provides a complete description of the intrinsic geometry of surfaces of convex polyhedrons.
 We give a sketch of its proof.
 \end{abstract}
 
 \section{Introduction}
 
-Intrinsic distance on the surface of a convex polyhedron is defined as the length of a shortest curve on the surface between the given two points.
+Intrinsic distance on the surface of a convex polyhedron is defined as the length of a shortest curve on the surface between two given points.
 
 Recall that the sum of angles at the tip of a convex polyhedral angle is less than $2\cdot\pi$;
 this statement can be found in a school textbook \cite[§~48]{kiselyov-3D}.
 
 It is easy to see that the surface of a convex polyhedron is homeomorphic to the sphere.
-Therefore the statements above imply that the surface of convex polyhedron equipped with intrinsic metric is an example of \emph{polyhedral metric on the sphere with the sum of angles around each vertex at most $2\cdot\pi$};
+Therefore the statements above imply that the surface of a convex polyhedron equipped with its intrinsic metric is an example of a \emph{polyhedral metric on the sphere with the sum of angles around each vertex at most $2\cdot\pi$};
 a metric is called \emph{polyhedral} if the sphere admits a triangulation such that every triangle is congruent to a plane triangle.
 
-The Alexandrov theorem states that converse holds if one includes polyhedrons that degenerate to a plane polygon.
-For such degenerate polyhedrons, its surface is defined as two copies of the polygon glued along their boundary --- one may think that the polygon is made from cardboard and to get from one of its sides to the other one has to pass the perimeter.
+Alexandrov's theorem states that the converse holds if one includes polyhedrons that degenerate to a plane polygon.
+For such a degenerate polyhedron, its surface is defined as two copies of the polygon glued along their boundary --- one may think that the polygon is made from cardboard and to get from one of its sides to the other one has to pass the perimeter.
 
 Further, we assume that a polyhedron can degenerate to a plane polygon.
 
-\begin{thm}{Alexandrov theorem}
+\begin{thm}{Alexandrov's theorem}
 \begin{enumerate}[I.]
 \item\label{thm:exist}
-A polyhedral metric on the sphere is isometric to a surface of convex polyhedron if and only if the sum of angles around each of its vertex is not greater than $2\cdot\pi$.
+A polyhedral metric on the sphere is isometric to the surface of a convex polyhedron if and only if the sum of angles around each of its vertex is not greater than $2\cdot\pi$.
 
 \item\label{thm:unique} 
 Moreover, a convex polyhedron is defined up to congruence by the intrinsic metric on its surface.
@@ -47,8 +47,8 @@ Moreover, a convex polyhedron is defined up to congruence by the intrinsic metri
 
 \end{thm}
 
-Two parts of this theorem are called existence and uniqueness theorems respectively.
-(There is another theorem of Alexandrov about the uniqueness of polyheron that generalizes Minkowski theorem.)
+The two parts of this theorem are called existence and uniqueness theorems respectively.
+(There is another theorem of Alexandrov about the uniqueness of polyhedron that generalizes Minkowski's theorem.)
 
 \begin{wrapfigure}{r}{30mm}
 \vskip-0mm
@@ -63,7 +63,7 @@ it could be explained to anyone familiar with basic topology.
 
 
 According to the theorem, a convex polyhedron is completely defined by the intrinsic metric of its surface.
-In particular, knowing the metric we could find the position of edges.
+In particular, knowing the metric we could find the position of the edges.
 However, in practice, it is not easy to do.
 For example, the surface glued from a rectangle as shown on the diagram defines a tetrahedron.
 Some of the glued lines appear inside facets of the tetrahedron and some edges (dashed lines) do not follow the sides of the rectangle.
@@ -74,28 +74,30 @@ Another proof was found by Yu.~A.~Volkov in his thesis \cite{volkov};
 it uses a deformation of three-dimensional polyhedral space.
 
 
-\section{Space of polyhedra and metrics}
+\section{Space of polyhedrons and metrics}
 
-\paragraph{Space of polyhedra.}
-Let us denote by $\Phi$ the space of all convex polyhedra in the Euclidean space,
-including polyhedra that degenerate to a plane polygon.
+\paragraph{Space of polyhedrons.}
+Let us denote by $\Phi$ the space of all convex polyhedrons in the Euclidean space,
+including polyhedrons that degenerate to a plane polygon.
 Polyhedra in $\Phi$ will be considered up to a motion of the space, 
-and whole space $\Phi$ will be considered with natural topology (an intuitive meaning of closeness of two polyhedra should be sufficient).  
+and the whole space $\Phi$ will be considered with the natural topology (an intuitive meaning of closeness of two polyhedrons should be sufficient).  
 
-Further, denote by $\Phi_n$ the polyhedra in $\Phi$ with exactly $n$ vertices.
+Further, denote by $\Phi_n$ the polyhedrons in $\Phi$ with exactly $n$ vertices.
 Since any polyhedron has at least 3 vertices, the space $\Phi$ admits a subdivision into a countable number of subsets $\Phi_3,\Phi_4,\dots$
 
 \paragraph{Space of polyhedral metrics.}
 The space of polyhedral metrics on the sphere with the sum of angles around each point at most $2\cdot\pi$ will be denoted by $\Psi$.
-The metrics in $\Psi$ will be considered up to an isometry, and whole space $\Psi$ will be equipped with natural topology (again, an intuitive meaning of closeness of two metrics is sufficient).
+The metrics in $\Psi$ will be considered up to an isometry, and the whole space $\Psi$ will be equipped with the natural topology (again, an intuitive meaning of closeness of two metrics is sufficient).
 
 A point on the sphere with the sum of angles strictly less than $2\cdot\pi$ will be called an \emph{essential vertex}.
 The subset of $\Psi$ of all metrics with exactly $n$ essential vertices will be denoted by $\Psi_n$.
 It is easy to see that any metric in $\Psi$ has at least 3 essential vertices.
-Therefore $\Psi$ is subdivided into a countably many subsets $\Psi_3,\Psi_4,\dots$
+Therefore $\Psi$ is subdivided into countably many subsets
+ $\Psi_3,\Psi_4,\dots$
 
-\paragraph{From polyhedron to its surface.}
-Recall that surface of a convex polyhedron is a sphere with a polyhedral metric such that the sum of angles around each point is at most $2\cdot\pi$.
+\paragraph{From a polyhedron to its surface.}
+
+Recall that the surface of a convex polyhedron is a sphere with a polyhedral metric such that the sum of angles around each point is at most $2\cdot\pi$.
 Therefore passing from a polyhedron to its surface defines a map
 \[\iota\:\Phi\to \Psi.\]
 
@@ -104,7 +106,7 @@ In other words, $\iota(\Phi_n)\subset \Psi_n$ for any $n\ge 3$.
 
 \section{About the proof}
 
-Using the notation introduced in the previous section, we can give the following more exact formulation of Alexandrov theorem: 
+Using the notation introduced in the previous section, we can give the following more exact formulation of Alexandrov's theorem: 
 
 \begin{thm}{Reformulation}
 For any integer $n\ge 3$,
@@ -112,18 +114,18 @@ the map $\iota$ is a bijection from $\Phi_n$ to~$\Psi_n$.
 \end{thm}
 
 We sketch the original proof of A. D. Alexandrov.
-It is based on a construction of a one-parameter family of polyhedrons that start at arbitrary polyhedron
-and ends at a polyhedron with surface isometric to the given one.
-This type of argument is called \emph{continuity method}; it is often used in the theory of differential equations.
+It is based on the  construction of a one-parameter family of polyhedrons that start at arbitrary polyhedron
+and ends at an arbitrary polyhedron with its surface isometric to the given one.
+This type of argument is called the \emph{continuity method}; it is often used in the theory of differential equations.
 
 \medskip
 
-Two parts of the first formulation will be proved separately.
+The two parts of the first formulation will be proved separately.
 
 \parit{Part \ref{thm:unique}.} Let us show that the map $\iota\:\Phi_n\to\Psi_n$ is injective;
 in other words, a convex polyhedron is defined by the intrinsic metric on its surface up to a motion of the space.
 
-The last statement is analogous to the Cauchy theorem about polyhedra,
+The last statement is analogous to the Cauchy theorem about polyhedrons,
 and the proof goes along the same lines. 
 
 The Cauchy theorem states that facets of a polyhedron together with the gluing rule completely describe a convex polyhedron;
@@ -141,7 +143,7 @@ For any integer $n\ge 3$, the space $\Psi_n$ is connected .
 \end{thm}
 
 The proof of this lemma is not complicated, but it requires ingenuity;
-it can be done by a direct construction of a one-parameter family of metrics in $\Psi_n$ that connects two given metrics.
+it can be done by the direct construction of a one-parameter family of metrics in $\Psi_n$ that connects two given metrics.
 Such a family can be obtained by а sequential application of the following construction and its inverse.
 
 Let $M$ be a sphere with metric from $\Psi_n$.
@@ -163,15 +165,15 @@ This statement is very close to the so-called \emph{invariance of domain theorem
 the latter states that a continuous injective map between manifolds of the same dimension is open.
 
 According to part \ref{thm:unique}, $\iota$ is injective.
-The proof of the invariance of domain theorem can be adapted to our case since both spaces $\Phi_n$ and $\Psi_n$ are $(3\cdot n-6)$-dimensional and both remind manifolds, altho, formally speaking, they are \emph{not} manifolds.
-In a more technical language, $\Phi_n$ and $\Psi_n$ have a natural structure of $(3\cdot n-6)$-dimensional \emph{orbifolds},
+The proof of the invariance of domain theorem can be adapted to our case since both spaces $\Phi_n$ and $\Psi_n$ are $(3\cdot n-6)$-dimensional and both look like manifolds, altho, formally speaking, they are \emph{not} manifolds.
+In a more technical language, $\Phi_n$ and $\Psi_n$ have the natural structure of $(3\cdot n-6)$-dimensional \emph{orbifolds},
 and the map $\iota$ respects the \emph{orbifold structure}.
 
 We will only show that both spaces $\Phi_n$ and $\Psi_n$ are $(3\cdot n-6)$-dimensional.
 
 Choose a polyhedron $P$ in $\Phi_n$.
-Note that $P$ is uniquely determined by $3\cdot n$ coordinates of its $n$ vertices.
-We can assume that the first vertex is the origin, the second has two vanishing coordinates and the third has one vanishing coordinates; therefore, all polyhedra in $\Phi_n$ that lie sufficiently close to $P$ can be described by $3\cdot n-6$ parameters.
+Note that $P$ is uniquely determined by the $3\cdot n$ coordinates of its $n$ vertices.
+We can assume that the first vertex is the origin, the second has two vanishing coordinates and the third has one vanishing coordinate; therefore, all polyhedrons in $\Phi_n$ that lie sufficiently close to $P$ can be described by $3\cdot n-6$ parameters.
 If $P$ has no symmetries then this description can be made one-to-one;
 in this case, a neighborhood of $P$ in $\Phi_n$ is a $(3\cdot n-6)$-dimensional manifold.
 If $P$ has a nontrivial symmetry group, then this description is not one-to-one but it does not have an impact on the dimension of $\Phi_n$.
@@ -202,6 +204,9 @@ that is, $\iota (Z)$ is closed in $\Psi_n$.
 Summarizing, $\iota(\Phi_n)$ is a nonempty closed and open set in $\Psi_n$, and $\Psi_n$ is connected for any $n\ge 3$.
 Therefore, $\iota(\Phi_n)=\Psi_n$; that is, $\iota\:\Phi_n\z\to\Psi_n$ is surjective.
 \qeds
+
+\parbf{Acknowledgments.} We want to thank Stephanie Alexander and Jules Tsukahara for help.
+The authors were partially supported by RFBR grant 20-01-00070 and NSF grant DMS-2005279.
 
 \sloppy
 \printbibliography[heading=bibintoc]
