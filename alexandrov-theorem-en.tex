@@ -31,8 +31,9 @@ It is easy to see that the surface of a convex polyhedron is homeomorphic to the
 Therefore the statements above imply that the surface of a convex polyhedron equipped with its intrinsic metric is an example of a \emph{polyhedral metric on the sphere with the sum of angles around each vertex at most $2\cdot\pi$};
 a metric is called \emph{polyhedral} if the sphere admits a triangulation such that every triangle is congruent to a plane triangle.
 
-Alexandrov's theorem states that the converse holds if one includes polyhedrons that degenerate to a plane polygon.
-For such a degenerate polyhedron, its surface is defined as two copies of the polygon glued along their boundary --- one may think that the polygon is made from cardboard and to get from one of its sides to the other one has to pass the perimeter.
+Alexandrov's theorem states that the converse holds if one includes twice covered polygons.
+In other words, a polyhedron can degenerate to a plane polygon;
+in this case, its surface is defined as two copies of the polygon glued along their boundary.
 
 Further, we assume that a polyhedron can degenerate to a plane polygon.
 
@@ -47,7 +48,8 @@ Moreover, a convex polyhedron is defined up to congruence by the intrinsic metri
 
 \end{thm}
 
-The two parts of this theorem are called existence and uniqueness theorems respectively.
+The first part is central; it is called the \emph{existence theorem}.
+The second part is called \emph{uniqueness theorem}.
 (There is another theorem of Alexandrov about the uniqueness of polyhedron that generalizes Minkowski's theorem.)
 
 \begin{wrapfigure}{r}{30mm}
@@ -68,8 +70,9 @@ However, in practice, it is not easy to do.
 For example, the surface glued from a rectangle as shown on the diagram defines a tetrahedron.
 Some of the glued lines appear inside facets of the tetrahedron and some edges (dashed lines) do not follow the sides of the rectangle.
 
-We will present a sketch of the original proof;
-a complete proof can be found in a beautifully written book by A. D. Alexandrov himself~\cite{alexandrov}.
+The theorem was proved by A. D. Alexandrov in 1941 \cite{alexandrov-1941};
+we will present a sketch of his proof.
+A complete proof can be found in a beautifully written book by A. D. Alexandrov himself~\cite{alexandrov}.
 Another proof was found by Yu.~A.~Volkov in his thesis \cite{volkov};
 it uses a deformation of three-dimensional polyhedral space.
 
@@ -135,8 +138,7 @@ its proof is given in many classical popular texts \cite{aigner-zigler,dolbilin,
 
 \parit{Part \ref{thm:exist}.}
 Let us prove that $\iota\:\Phi_n\to\Psi_n$ is surjective.
-This is the main part of the proof;
-it is subdivided into the following lemmas:
+This part of the proof is subdivided into the following lemmas:
 
 \begin{thm}{Lemma}
 For any integer $n\ge 3$, the space $\Psi_n$ is connected .
@@ -205,8 +207,7 @@ Summarizing, $\iota(\Phi_n)$ is a nonempty closed and open set in $\Psi_n$, and 
 Therefore, $\iota(\Phi_n)=\Psi_n$; that is, $\iota\:\Phi_n\z\to\Psi_n$ is surjective.
 \qeds
 
-\parbf{Acknowledgments.} We want to thank Stephanie Alexander and Jules Tsukahara for help.
-The authors were partially supported by RFBR grant 20-01-00070 and NSF grant DMS-2005279.
+\parbf{Acknowledgments.} We want to thank S. Alexander, Y. Burago, and J. Tsukahara for help. The authors were partially supported by RFBR grant 20-01-00070 and NSF grant DMS-2005279.
 
 \sloppy
 \printbibliography[heading=bibintoc]
