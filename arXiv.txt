@@ -1,0 +1,8 @@
+alexandrov-theorem-en.tex
+alexandrov-theorem-en.bbl
+en-note.sty
+alexandrov-theorem-ru.tex
+alexandrov-theorem-ru.bbl
+ru-note.sty
+library-en.bib
+library.bib
