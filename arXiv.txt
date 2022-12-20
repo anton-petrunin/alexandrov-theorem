@@ -6,3 +6,4 @@ alexandrov-theorem-ru.bbl
 ru-note.sty
 library-en.bib
 library.bib
+mppics/pic-10.mps
